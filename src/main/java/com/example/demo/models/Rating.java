@@ -14,7 +14,7 @@ public class Rating {
     private String entityType;
     private Integer score;
     private String comment;
-    private LocalDateTime ratingDate;
+    private LocalDateTime timestamp;
 
     public Rating() {}
 
@@ -23,7 +23,7 @@ public class Rating {
         this.entityType = entityType;
         this.score = score;
         this.comment = comment;
-        this.ratingDate = ratingDate;
+        this.timestamp = ratingDate;
     }
 
     // Getters and Setters
@@ -68,11 +68,11 @@ public class Rating {
         this.comment = comment;
     }
 
-    public LocalDateTime getRatingDate() {
-        return ratingDate;
+    public LocalDateTime getTimestamp() {
+        return timestamp;
     }
 
-    public void setRatingDate(LocalDateTime ratingDate) {
-        this.ratingDate = ratingDate;
+    public void setTimestamp(LocalDateTime ratingDate) {
+        this.timestamp = ratingDate;
     }
 }
